@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LOVEHAUS LABELS — PRESS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="fade">
+  <h1>PRESS</h1>
+  <p class="editorial">
+    LOVEHAUS LABELS is an independent creative house working across music,
+    fashion and visual art.
+  </p>
+</section>
+
+<section class="fade">
+  <h2>Focus</h2>
+  <p class="editorial">
+    artist development · conceptual releases · visual storytelling ·
+    alternative pop culture
+  </p>
+</section>
+
+<section class="fade">
+  <h2>Contact</h2>
+  <p>press@lovehauslabels.com</p>
+</section>
+
+<script>
+  const elements = document.querySelectorAll('.fade');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('show');
+    });
+  });
+  elements.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
